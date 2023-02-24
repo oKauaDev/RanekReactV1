@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  padding-top: 32px;
+  padding-left: 16px;
+}
+
+/* Keyframes Spin */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Spinner */
+.spinner {
+  --spinner-color: black;
+
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.spinner--quarter {
+  width: 32px;
+  border: 4px solid var(--spinner-color);
+  border-top-color: transparent;
+
+  animation-duration: 1s;
+}

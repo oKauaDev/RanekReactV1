@@ -1,0 +1,26 @@
+.section {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.produto {
+  cursor: pointer;
+}
+
+.produtoImagem {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+}

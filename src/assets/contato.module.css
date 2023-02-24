@@ -1,0 +1,46 @@
+.container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.ilustration {
+  width: 100%;
+}
+
+.ul {
+  margin-top: 16px;
+  list-style: none;
+  margin-left: 32px;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+}
+
+.span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #cacaca;
+  margin-right: 4px;
+}
+
+@media (max-width: 414px) {
+  .container {
+    display: block;
+    text-align: center;
+  }
+
+  .ilustration {
+    display: none;
+  }
+
+  .li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
